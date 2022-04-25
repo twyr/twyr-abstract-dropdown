@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/twyr/twyr-abstract-dropdown#readme",
 	"license": "MITNFA",
 	"readme": "README.md",
-	"version": "0.5.1",
+	"version": "0.6.1",
 	"keywords": [
 		"material",
 		"design",
@@ -367,7 +367,7 @@
 		"@glimmer/component": "1.1.2",
 		"@glimmer/tracking": "1.1.2",
 		"@tailwindcss/typography": "0.5.2",
-		"@twyr/ember-abstract-dropdown": "0.5.1",
+		"@twyr/ember-abstract-dropdown": "0.6.1",
 		"@twyr/ember-utility-modifiers": "0.5.1",
 		"broccoli-asset-rev": "3.0.0",
 		"ember-auto-import": "2.4.1",
