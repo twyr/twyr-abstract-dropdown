@@ -18,7 +18,7 @@
 	--tw-ring-inset:  ;
 	--tw-ring-offset-width: 0px;
 	--tw-ring-offset-color: #fff;
-	--tw-ring-color: rgb(59 130 246 / 50%);
+	--tw-ring-color: rgb(59 130 246 / 0.5);
 	--tw-ring-offset-shadow: 0 0 #0000;
 	--tw-ring-shadow: 0 0 #0000;
 	--tw-shadow: 0 0 #0000;
@@ -41,4 +41,31 @@
 	--tw-backdrop-opacity:  ;
 	--tw-backdrop-saturate:  ;
 	--tw-backdrop-sepia:  
+}
+
+.container {
+	width: 100%
+}
+
+.ember-abstract-dropdown {
+	position: relative;
+	background-color: transparent
+}
+
+.ember-abstract-dropdown[disabled] {
+	pointer-events: none
+}
+
+.ember-abstract-dropdown:not([disabled]) .ember-abstract-dropdown__trigger {
+	cursor: pointer
+}
+
+.ember-abstract-dropdown:not([disabled]) .ember-abstract-dropdown__content {
+	position: absolute;
+	z-index: 6;
+	text-overflow: ellipsis
+}
+
+.hidden {
+	display: none
 }

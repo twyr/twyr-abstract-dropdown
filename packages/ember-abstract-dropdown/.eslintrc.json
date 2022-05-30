@@ -4,7 +4,7 @@
 	"parserOptions": {
 		"ecmaVersion": 2021,
 		"sourceType": "module",
-		"requireConfigFile": false,
+		"requireConfigFile": true,
 		"ecmaFeatures": {
 			"legacyDecorators": true
 		}
@@ -12,8 +12,8 @@
 	"plugins": ["ember", "json", "prettier"],
 	"extends": [
 		"eslint:recommended",
-		"plugin:json/recommended",
 		"plugin:ember/recommended",
+		"plugin:json/recommended",
 		"plugin:prettier/recommended"
 	],
 	"env": {
@@ -24,11 +24,10 @@
 	"overrides": [
 		{
 			"files": [
-				".dependency-cruiser.js",
 				".template-lintrc.js",
-				"addon-main.js",
-				"postcss.config.js",
-				"tailwind.config.js"
+				"./addon-main.js",
+				"./postcss.config.js",
+				"./tailwind.config.js"
 			],
 			"excludedFiles": ["addon/**"],
 			"parserOptions": {
@@ -42,6 +41,7 @@
 			"plugins": ["json", "node"],
 			"extends": ["plugin:json/recommended", "plugin:node/recommended"],
 			"rules": {
+				"node/no-extraneous-require": "off",
 				"node/no-unpublished-require": "off"
 			}
 		}

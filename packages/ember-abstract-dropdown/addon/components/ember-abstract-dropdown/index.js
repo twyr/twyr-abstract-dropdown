@@ -83,9 +83,13 @@ export default class EmberAbstractDropdownComponent extends Component {
 	@action
 	_open() {
 		this.#debug?.(`_open`);
-		if (this?.open) return;
 
-		if (!this.#element || this.#element?.hasAttribute?.('disabled')) return;
+		if (!this.#element || this.#element?.hasAttribute?.('disabled')) {
+			if (this?.open) this.open = false;
+			return;
+		}
+
+		if (this?.open) return;
 		this.open = true;
 
 		const status = this?._setupStatus?.();

@@ -1,14 +1,17 @@
 <h1 align="center">
-    Twy'r Abstract Dropdown
+    Twy&apos;r Abstract Dropdown
 </h1>
 <div align="center">
     <a href="https://spdx.org/licenses/MITNFA.html"><img src="https://img.shields.io/badge/License-MIT%20%2Bno--false--attribs-blue" /></a>
-    <a href="https://github.com/twyr/twyr-abstract-dropdown/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" /></a>
+    <a href="https://github.com/twyr/twyr-abstract-dropdown/blob/main/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.1%20adopted-ff69b4.svg" /></a>
 </div>
 <hr />
 
 <div align="center">
-    <a href="https://emberjs.com">Ember 4.0+</a> implementation of a resuable dropdown component
+    Monorepo containing <a href="https://emberjs.com">Ember 4.0+</a> Dropdown Component used in Twy&apos;r frontend projects
+</div>
+<div align="center">
+	Built on the <a href="">Embroider</a> build system
 </div>
 <div align="center">
     Built as part of the <a href="https://github.com/twyr">Twy&apos;r</a> effort by <a href="https://github.com/shadyvd">Vish Desai</a> and <a href="https://github.com/twyr/twyr-abstract-dropdown/graphs/contributors">contributors</a>
@@ -17,46 +20,46 @@
 
 #### TABLE OF CONTENTS
 
-- [About](#about)
-- [Status](#status)
-- [Why](#why)
-- [Goals](#goals)
-- [Goals](#goals)
-- [Contributing](#contributing)
-  - [Code of Conduct](#code-of-conduct)
-  - [Developing](#developing)
-  - [Contributors](#contributors)
-- [License](#license)
+-   [About](#about)
+-   [Acknowledgement](#acknowledgement)
+-   [Status](#status)
+-   [Why](#why)
+-   [Contributing](#contributing)
+    -   [Code of Conduct](#code-of-conduct)
+    -   [Developing](#developing)
+    -   [Contributors](#contributors)
+-   [License](#license)
 
 #### ABOUT
 
-This is a monorepo used for the development and maintenance of the [Ember](https://emberjs.com) implementation of a resuable abstract dropdown component, and consists of
-two packages - the Ember Abstract Dropdown Addon itself, and an Ember App for testing, debugging, documenting, and showcasing the addon.
+This is a monorepo containing an [Ember](https://emberjs.com) addon implementing a generic dropdown component built using [Embroider](https://github.com/embroider-build/embroider),
+and a second package containing a simple Test App to test/document/showcase the component.
+
+Please see the README of the Addon package for details about the component, and associated documentation
+
+#### ACKNOWLEDGEMENT
+
+The entire idea of the component, the way it behaves, etc., etc. is copied directly from the famous [Ember Basic Dropdown](https://github.com/cibernox/ember-basic-dropdown), authored
+by [Miguel Camba](https://github.com/cibernox).
 
 #### STATUS
 
 | Category       | Status                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Conventions    | [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-brightgreen.svg)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)                                                                                                                                                                                  |
+| Conventions    | [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-brightgreen.svg)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)                                                                                                                                                                   |
 | Code Stats     | [![Languages](https://badgen.net/lgtm/langs/g/twyr/twyr-abstract-dropdown)](https://lgtm.com/projects/g/twyr/twyr-abstract-dropdown) ![GitHub repo size](https://img.shields.io/github/repo-size/twyr/twyr-abstract-dropdown) [![LoC](https://badgen.net/lgtm/lines/g/twyr/twyr-abstract-dropdown)](https://lgtm.com/projects/g/twyr/twyr-abstract-dropdown) [![Language grade](https://badgen.net/lgtm/grade/g/twyr/twyr-abstract-dropdown)](https://lgtm.com/projects/g/twyr/twyr-abstract-dropdown/context:javascript) [![Coverage Status](https://coveralls.io/repos/github/twyr/twyr-abstract-dropdown/badge.svg?branch=main)](https://coveralls.io/github/twyr/twyr-abstract-dropdown?branch=main) |
-| Security       | [![Known Vulnerabilities](https://snyk.io/test/github/twyr/twyr-abstract-dropdown/badge.svg?targetFile=package.json)](https://snyk.io/test/github/twyr/twyr-abstract-dropdown?targetFile=package.json) [![Total alerts](https://img.shields.io/lgtm/alerts/g/twyr/twyr-abstract-dropdown.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/twyr/twyr-abstract-dropdown/alerts/) ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@twyr/twyr-abstract-dropdown)                                                                                                                                                             |
+| Security       | [![Known Vulnerabilities](https://snyk.io/test/github/twyr/twyr-abstract-dropdown/badge.svg?targetFile=package.json)](https://snyk.io/test/github/twyr/twyr-abstract-dropdown?targetFile=package.json) [![Total alerts](https://img.shields.io/lgtm/alerts/g/twyr/twyr-abstract-dropdown.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/twyr/twyr-abstract-dropdown/alerts/) ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@twyr/ember-observer-modifiers)                                                                                                                                                           |
 |                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Development    | ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/twyr/twyr-abstract-dropdown) ![GitHub last commit](https://img.shields.io/github/last-commit/twyr/twyr-abstract-dropdown)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Issues & PRs   | ![GitHub open issues](https://img.shields.io/github/issues-raw/twyr/twyr-abstract-dropdown) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/twyr/twyr-abstract-dropdown) ![GitHub open prs](https://img.shields.io/github/issues-pr-raw/twyr/twyr-abstract-dropdown) ![GitHub closed prs](https://img.shields.io/github/issues-pr-closed-raw/twyr/twyr-abstract-dropdown)                                                                                                                                                                                                                                                                                                        |
 |                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Release Status | ![GitHub package.json version](https://img.shields.io/github/package-json/v/twyr/twyr-abstract-dropdown/main) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/twyr/twyr-abstract-dropdown?sort=semver) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/twyr/twyr-abstract-dropdown?sort=semver)                                                                                                                                                                                                                                                                                                                                                              |
-| Publish Status | ![node-current](https://img.shields.io/node/v/@twyr/twyr-abstract-dropdown) ![npm bundle size](https://img.shields.io/bundlephobia/min/@twyr/twyr-abstract-dropdown) ![npm](https://img.shields.io/npm/dy/@twyr/twyr-abstract-dropdown)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 #### WHY
 
-Just because...
-
-#### GOALS
-
-Ember-related goals:
-
-1. Build for [Ember 4.0+](https://emberjs.com) - with no expectation of backward compatibility
-1. Build using [Embroider](https://github.com/embroider-build/embroider) - aim for "Native Support"
+Why, indeed? Simply put, to re-write the Ember Basic Dropdown component completely in Ember 4.0+ using the Embroider build system. Without the burden of
+backward compatibility, the addon code becomes smaller, cleaner, and faster - and the format published to npm is compatible with the ultimate goals of the
+Embroider effort.
 
 #### CONTRIBUTING
 

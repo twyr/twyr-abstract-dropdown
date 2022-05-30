@@ -6,7 +6,5 @@
 	"tabWidth": 4,
 
 	"bracketSpacing": true,
-	"trailingComma": "none",
-
-	"plugins": ["prettier-plugin-jsdoc"]
+	"trailingComma": "none"
 }

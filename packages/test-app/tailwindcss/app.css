@@ -1,0 +1,7 @@
+@import "tailwindcss/base";
+
+@import "@twyr/ember-abstract-dropdown/dist/styles/ember-abstract-dropdown.css";
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+@import "tailwindcss/variants";
