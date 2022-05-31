@@ -1,26 +1,35 @@
 .container {
-	width: 100%
+
+			width: 100%
 }
 
 .ember-abstract-dropdown {
-	position: relative;
-	background-color: transparent
+
+			position: relative;
+
+			background-color: transparent
 }
 
 .ember-abstract-dropdown[disabled] {
-	pointer-events: none
+
+			pointer-events: none
 }
 
 .ember-abstract-dropdown:not([disabled]) .ember-abstract-dropdown__trigger {
-	cursor: pointer
+
+			cursor: pointer
 }
 
 .ember-abstract-dropdown:not([disabled]) .ember-abstract-dropdown__content {
-	position: absolute;
-	z-index: 6;
-	text-overflow: ellipsis
+
+			position: absolute;
+
+			text-overflow: ellipsis;
+
+			z-index: 6
 }
 
 .hidden {
-	display: none
+
+			display: none
 }

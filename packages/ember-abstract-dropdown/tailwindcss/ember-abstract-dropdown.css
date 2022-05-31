@@ -1,22 +1,23 @@
 @tailwind components;
 
 .ember-abstract-dropdown {
-	position: relative;
-	background-color: transparent
-}
+	@apply relative bg-transparent;
 
-.ember-abstract-dropdown[disabled] {
-	pointer-events: none
-}
+	&[disabled] {
+		@apply pointer-events-none;
+	}
 
-.ember-abstract-dropdown:not([disabled]) .ember-abstract-dropdown__trigger {
-	cursor: pointer
-}
+	&:not([disabled]) {
+		& .ember-abstract-dropdown__trigger {
+			@apply cursor-pointer;
+		}
 
-.ember-abstract-dropdown:not([disabled]) .ember-abstract-dropdown__content {
-	position: absolute;
-	z-index: 6;
-	text-overflow: ellipsis
+		& .ember-abstract-dropdown__content {
+			@apply absolute overflow-ellipsis;
+
+			z-index: 6;
+		}
+	}
 }
 
 @tailwind utilities;

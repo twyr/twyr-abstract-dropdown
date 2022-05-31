@@ -9,8 +9,10 @@ const emberAbstractDropdownBuildHooks = {
 	options: {
 		'@embroider/macros': {
 			setOwnConfig: {
-				abstractDropdownContentElementId:
-					'ember-abstract-dropdown-content-container'
+				abstractDropdownContentContainerId:
+					'ember-abstract-dropdown--content-container',
+				abstractDropdownContentContainerClass:
+					'ember-abstract-dropdown--content-container'
 			}
 		}
 	},
@@ -47,7 +49,7 @@ const emberAbstractDropdownBuildHooks = {
 			)}\n`
 		);
 
-		const addonContent = `${content}<div id="${addonConfig.abstractDropdownContentElementId}" class="ember-abstract-dropdown-content-container">&nbsp;</div>`;
+		const addonContent = `${content}<div id="${addonConfig.abstractDropdownContentContainerId}" class="${addonConfig.abstractDropdownContentContainerClass}">&nbsp;</div>`;
 		return addonContent;
 	}
 	// #endregion

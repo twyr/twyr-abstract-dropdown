@@ -5,6 +5,7 @@ import nextBrowserTick from '../../../utils/next-browser-tick';
 
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
+import { getOwnConfig } from '@embroider/macros';
 
 export default class EmberAbstractDropdownContentComponent extends Component {
 	// #region Accessed Services
@@ -49,7 +50,7 @@ export default class EmberAbstractDropdownContentComponent extends Component {
 		this.#processingScroll = true;
 
 		await nextBrowserTick?.();
-		await this?.setNewPosition();
+		await this?.setNewPosition?.();
 
 		this.#processingScroll = false;
 	}
@@ -122,19 +123,18 @@ export default class EmberAbstractDropdownContentComponent extends Component {
 		if (!this?.open) return;
 
 		await nextBrowserTick?.();
-		await this?.setNewPosition();
+		await this?.setNewPosition?.();
 	}
 	// #endregion
 
 	// #region Computed Properties
-	get contentId() {
-		return `${this?.dropdownId}-content`;
-	}
-
 	get contentContainerElement() {
 		const containerId =
 			this?.args?.contentContainer ??
-			'div#ember-abstract-dropdown--content-container';
+			`div#${
+				this.#config?.abstractDropdownContentElementId ??
+				'ember-abstract-dropdown--content-container'
+			}`;
 		this.#debug?.('contentContainerElement::containerId: ', containerId);
 
 		const container = document?.querySelector?.(containerId);
@@ -178,8 +178,9 @@ export default class EmberAbstractDropdownContentComponent extends Component {
 
 	// #region Private Attributes
 	#debug = debugLogger('component:ember-abstract-dropdown-content');
-	#controls = {};
+	#config = getOwnConfig();
 
+	#controls = {};
 	#element = null;
 
 	#processingScroll = false;
