@@ -85,7 +85,7 @@
 		"postcss-import": "14.1.0",
 		"postcss-nesting": "10.1.10",
 		"postcss-preset-env": "7.7.2",
-		"rollup": "2.77.1",
+		"rollup": "2.77.2",
 		"stylelint": "14.9.1",
 		"stylelint-config-hudochenkov": "7.0.1",
 		"stylelint-config-prettier": "9.0.3",
